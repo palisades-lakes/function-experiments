@@ -13,13 +13,13 @@
 (def options {} #_{:n 1024 :samples 4})
 (bench/bench 
   [prng/doubles defs/udouble]
-  [#_defs/naive
-   #_defs/invokestatic
-   #_defs/primitive
+  [defs/inline
+   defs/invokestatic
+   defs/primitive
    defs/boxprimitive
-   #_defs/cljmeta
+   defs/cljmeta
    defs/funxmeta
-   #_defs/boxed]
+   defs/boxed]
   options)
 ;;----------------------------------------------------------------
 #_(shutdown-agents)

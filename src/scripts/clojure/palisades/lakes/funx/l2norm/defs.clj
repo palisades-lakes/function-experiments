@@ -19,7 +19,7 @@
       umax 100.0]
   (def ^IFn$D udouble (prng/uniform-double umin umax urp)))
 ;;----------------------------------------------------------------
-(defn naive ^double [^"[D" x] (L2Norm/naive x))
+(defn inline ^double [^"[D" x] (L2Norm/naive x))
 (defn invokestatic ^double [^"[D" x] (L2Norm/invokestatic x))
 (defn primitive ^double [^"[D" x] (L2Norm/primitive l2/square x))
 (defn boxprimitive ^double [^"[D" x] (L2Norm/boxing l2/square x))
