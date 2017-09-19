@@ -24,6 +24,7 @@
 (defn primitive ^double [^"[D" x] (L2Norm/primitive l2/square x))
 (defn boxprimitive ^double [^"[D" x] (L2Norm/boxing l2/square x))
 (defn cljmeta ^double [^"[D" x] (L2Norm/boxing l2/clj-meta-square x))
-(defn funxmeta ^double [^"[D" x] (L2Norm/boxing l2/funx-meta-square x))
+(defn funxboxed ^double [^"[D" x] (L2Norm/boxing l2/funx-meta-square x))
+(defn funxprimitive ^double [^"[D" x] (L2Norm/primitive l2/funx-meta-square x))
 (defn boxed ^double [^"[D" x] (L2Norm/boxing l2/boxed-square x))
 ;----------------------------------------------------------------

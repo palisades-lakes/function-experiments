@@ -1,7 +1,7 @@
 (set! *warn-on-reflection* true)
 (set! *unchecked-math* :warn-on-boxed)
 ;;----------------------------------------------------------------
-(ns palisades.lakes.funx.l2norm.bench
+(ns palisades.lakes.funx.l2norm.funx
   "Use criterium for alternative function implementations."
   {:author "palisades dot lakes at gmail dot com"
    :since "2017-09-16"
@@ -10,17 +10,10 @@
             [palisades.lakes.bench.core :as bench]
             [palisades.lakes.funx.l2norm.defs :as defs]))
 ;;----------------------------------------------------------------
-(def options {:n (* 4 1024 1024) :samples 200})
-(bench/bench 
+(def options {:n (* 4 1024 1024) :samples (* 16 1024)})
+(bench/profile
   [prng/doubles defs/udouble]
-  [defs/inline
-   defs/invokestatic
-   defs/primitive
-   defs/funxprimitive
-   defs/boxprimitive
-   defs/boxed
-   defs/funxboxed
-   defs/cljmeta]
+  [defs/funxprimitive]
   options)
 ;;----------------------------------------------------------------
 #_(shutdown-agents)
