@@ -1,7 +1,7 @@
 (set! *warn-on-reflection* false)
 (set! *unchecked-math* false)
 ;;----------------------------------------------------------------
-(ns palisades.lakes.funx.codox
+(ns palisades.lakes.funx.doc.codox
   
   {:doc "Generate codox for function-experiments."
    :author "palisades dot lakes at gmail dot com"
