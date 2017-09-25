@@ -1,6 +1,8 @@
-# function-experiments [![Clojars Project](https://img.shields.io/clojars/v/palisades-lakes/function-experiments.svg)](https://clojars.org/palisades-lakes/function-experiments)
+# function-experiments
 
-Variations on CLojure functions.
+ [![Clojars Project](https://img.shields.io/clojars/v/palisades-lakes/function-experiments.svg)](https://clojars.org/palisades-lakes/function-experiments)
+
+Variations on Clojure functions.
 
 ## Installation
 
@@ -28,7 +30,4 @@ Java and .NET applications. Take a look at YourKit's leading software products:
 
 * <a href="http://www.yourkit.com/java/profiler/index.jsp">YourKit Java Profiler</a> and
 * <a href="http://www.yourkit.com/.net/profiler/index.jsp">YourKit .NET Profiler</a>.
-
-
-
 
