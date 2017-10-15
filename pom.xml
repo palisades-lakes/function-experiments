@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+ xmlns="http://maven.apache.org/POM/4.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
  <modelVersion>4.0.0</modelVersion>
  <properties>
   <github-url>scm:git:https://github.com/palisades-lakes/function-experiments.git</github-url>
@@ -63,7 +67,7 @@
    </plugin>
   </plugins>
  </build>
-  <dependencies>
+ <dependencies>
   <dependency>
    <groupId>palisades-lakes</groupId>
    <artifactId>benchtools</artifactId>
@@ -74,8 +78,17 @@
    <artifactId>dynamic-functions</artifactId>
    <version>0.0.10-SNAPSHOT</version>
   </dependency>
+  <dependency>
+   <groupId>nodisassemble</groupId>
+   <artifactId>nodisassemble</artifactId>
+   <version>0.1.3</version>
+  </dependency>
+  <dependency>
+   <groupId>net.bytebuddy</groupId>
+   <artifactId>byte-buddy</artifactId>
+   <version>1.7.6</version>
+  </dependency>
  </dependencies>
- 
  <groupId>palisades-lakes</groupId>
  <artifactId>function-experiments</artifactId>
  <version>0.0.10-SNAPSHOT</version>
