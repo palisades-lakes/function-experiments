@@ -88,6 +88,12 @@
    <artifactId>byte-buddy</artifactId>
    <version>1.7.6</version>
   </dependency>
+  <dependency>
+   <groupId>net.bytebuddy</groupId>
+   <artifactId>byte-buddy-agent</artifactId>
+   <version>1.7.6</version>
+   <scope>test</scope>
+  </dependency>
  </dependencies>
  <groupId>palisades-lakes</groupId>
  <artifactId>function-experiments</artifactId>

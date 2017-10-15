@@ -1,6 +1,6 @@
 @echo off
 :: palisades.lakes (at) gmail (dot) com
-:: 2017-10-15
+:: 2017-10-09
 
 ::set GC=-XX:+AggressiveHeap -XX:+UseStringDeduplication 
 set GC=
@@ -13,6 +13,7 @@ set TRACE=
 
 set PROF=
 ::set PROF=-Xrunhprof:cpu=samples,depth=128,thread=y,doe=y
+set DISS=-javaagent:"lib/nodisassemble-0.1.3.jar"
 
 ::set THRUPUT=-d64 -server -XX:+AggressiveOpts 
 set THRUPUT=-d64 -server
@@ -27,6 +28,6 @@ set CP=-cp ./src/scripts/clojure;lib/*
 set JAVA_HOME=C:\Program Files\Java\jdk-9
 set JAVA="%JAVA_HOME%\bin\java"
 
-set CMD=%JAVA% %THRUPUT% -ea -dsa -Xbatch %GC% %PROF% %XMX% %COMPRESSED% %TRACE% %OPENS% %CP% clojure.main %*
+set CMD=%JAVA% %THRUPUT% -ea -dsa -Xbatch %DISS% %GC% %PROF% %XMX% %COMPRESSED% %TRACE% %OPENS% %CP% clojure.main %*
 echo %CMD%
 %CMD%
