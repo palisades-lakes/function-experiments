@@ -70,6 +70,11 @@
  <dependencies>
   <dependency>
    <groupId>palisades-lakes</groupId>
+   <artifactId>metagent</artifactId>
+   <version>0.0.10-SNAPSHOT</version>
+  </dependency>
+  <dependency>
+   <groupId>palisades-lakes</groupId>
    <artifactId>benchtools</artifactId>
    <version>0.0.10-SNAPSHOT</version>
   </dependency>
@@ -78,6 +83,7 @@
    <artifactId>dynamic-functions</artifactId>
    <version>0.0.10-SNAPSHOT</version>
   </dependency>
+  <!-- 
   <dependency>
    <groupId>nodisassemble</groupId>
    <artifactId>nodisassemble</artifactId>
@@ -88,12 +94,13 @@
    <artifactId>byte-buddy</artifactId>
    <version>1.7.6</version>
   </dependency>
-  <dependency>
+   <dependency>
    <groupId>net.bytebuddy</groupId>
    <artifactId>byte-buddy-agent</artifactId>
    <version>1.7.6</version>
    <scope>test</scope>
   </dependency>
+   -->
  </dependencies>
  <groupId>palisades-lakes</groupId>
  <artifactId>function-experiments</artifactId>

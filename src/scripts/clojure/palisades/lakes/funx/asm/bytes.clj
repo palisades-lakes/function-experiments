@@ -43,7 +43,7 @@
 ;;----------------------------------------------------------------
 (get-class-bytes (make-adder 1))
 ;;----------------------------------------------------------------
-(println (nod/disassemble (make-adder 1)))
+#_(println (nod/disassemble (make-adder 1)))
 ;;----------------------------------------------------------------
 ;public static void attachGivenAgentToThisVM(String pathToAgentJar) {
 ;  try {                                                                               
