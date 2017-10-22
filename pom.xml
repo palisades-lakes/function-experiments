@@ -5,23 +5,15 @@
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
  <modelVersion>4.0.0</modelVersion>
- <properties>
-  <github-url>scm:git:https://github.com/palisades-lakes/function-experiments.git</github-url>
-  <!-- github-url>scm:git:file://.</github-url -->
-  <timestamp>${maven.build.timestamp}</timestamp>
-  <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
- </properties>
+ <groupId>palisades-lakes</groupId>
+ <artifactId>function-experiments</artifactId>
+ <description>Benchmarks for alternatives to clojure 1.8.0 functions.</description>
+ <version>0.0.10-SNAPSHOT</version>
  <parent>
   <groupId>palisades-lakes</groupId>
   <artifactId>palisades-lakes-parent</artifactId>
   <version>0.0.10-SNAPSHOT</version>
  </parent>
- <scm>
-  <connection>${github-url}</connection>
-  <developerConnection>${github-url}</developerConnection>
-  <url>${github-url}</url>
-  <tag>HEAD</tag>
- </scm>
  <build>
   <plugins>
    <plugin>
@@ -83,27 +75,10 @@
    <artifactId>dynamic-functions</artifactId>
    <version>0.0.10-SNAPSHOT</version>
   </dependency>
-  <!-- 
-  <dependency>
-   <groupId>nodisassemble</groupId>
-   <artifactId>nodisassemble</artifactId>
-   <version>0.1.3</version>
-  </dependency>
-  <dependency>
-   <groupId>net.bytebuddy</groupId>
-   <artifactId>byte-buddy</artifactId>
-   <version>1.7.6</version>
-  </dependency>
-   <dependency>
-   <groupId>net.bytebuddy</groupId>
-   <artifactId>byte-buddy-agent</artifactId>
-   <version>1.7.6</version>
-   <scope>test</scope>
-  </dependency>
-   -->
+  <!-- <dependency> <groupId>nodisassemble</groupId> <artifactId>nodisassemble</artifactId> 
+   <version>0.1.3</version> </dependency> <dependency> <groupId>net.bytebuddy</groupId> 
+   <artifactId>byte-buddy</artifactId> <version>1.7.6</version> </dependency> <dependency> 
+   <groupId>net.bytebuddy</groupId> <artifactId>byte-buddy-agent</artifactId> <version>1.7.6</version> 
+   <scope>test</scope> </dependency> -->
  </dependencies>
- <groupId>palisades-lakes</groupId>
- <artifactId>function-experiments</artifactId>
- <version>0.0.10-SNAPSHOT</version>
- <description>Benchmarks for alternatives to clojure 1.8.0 functions.</description>
 </project>
