@@ -8,11 +8,11 @@
  <groupId>palisades-lakes</groupId>
  <artifactId>function-experiments</artifactId>
  <description>Benchmarks for alternatives to clojure 1.8.0 functions.</description>
- <version>0.0.10-SNAPSHOT</version>
+ <version>0.0.11-SNAPSHOT</version>
  <parent>
   <groupId>palisades-lakes</groupId>
   <artifactId>palisades-lakes-parent</artifactId>
-  <version>0.0.10-SNAPSHOT</version>
+  <version>0.0.11-SNAPSHOT</version>
  </parent>
  <build>
   <plugins>
@@ -64,17 +64,17 @@
   <dependency>
    <groupId>palisades-lakes</groupId>
    <artifactId>metagent</artifactId>
-   <version>0.0.10-SNAPSHOT</version>
+   <version>0.0.11-SNAPSHOT</version>
   </dependency>
   <dependency>
    <groupId>palisades-lakes</groupId>
    <artifactId>benchtools</artifactId>
-   <version>0.0.10-SNAPSHOT</version>
+   <version>0.0.11-SNAPSHOT</version>
   </dependency>
   <dependency>
    <groupId>palisades-lakes</groupId>
    <artifactId>dynamic-functions</artifactId>
-   <version>0.0.10-SNAPSHOT</version>
+   <version>0.0.11-SNAPSHOT</version>
   </dependency>
   <!-- <dependency> <groupId>nodisassemble</groupId> <artifactId>nodisassemble</artifactId> 
    <version>0.1.3</version> </dependency> <dependency> <groupId>net.bytebuddy</groupId> 
