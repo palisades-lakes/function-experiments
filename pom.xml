@@ -5,7 +5,7 @@
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
  <modelVersion>4.0.0</modelVersion>
- <groupId>palisades-lakes</groupId>
+ <!-- groupId>palisades-lakes</groupId -->
  <artifactId>function-experiments</artifactId>
  <description>Benchmarks for alternatives to clojure 1.8.0 functions.</description>
  <version>0.0.11-SNAPSHOT</version>
@@ -45,7 +45,7 @@
      </execution>
     </executions>
     <configuration>
-      <vmArgs>-ea -dsa</vmArgs>
+      <vmargs>-ea -dsa</vmargs>
      <clojureOptions>-Dclojure.compiler.direct-linking=true</clojureOptions>
      <namespaces>
       <namespace>!palisades.lakes.funx.test.*</namespace>
